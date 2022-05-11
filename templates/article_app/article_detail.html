@@ -9,5 +9,6 @@
     <p>content: {{ article.content }}</p>
     <span>author name: {{ article.author.get_full_name }}</span> <br>
     <span>created date: {{ article.publication_datetime }}</span>
+    <p><a href="{% url 'article_app:article_list' %}">see article list</a> </p>
 </body>
 </html>

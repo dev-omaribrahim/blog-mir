@@ -7,7 +7,7 @@ from .models import ContactRequest
 class ContactRequestForm(forms.ModelForm):
     class Meta:
         model = ContactRequest
-        exclude = ("date",) # exclude it since it already auto generated
+        exclude = ("date",)  # exclude it since it already auto generated
 
     def send_email(self, subject, content):
         send_mail(
